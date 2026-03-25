@@ -57,14 +57,17 @@
 
 - O roteador conhece o caminho completo?
     
-    R: Sim, dada a topologia utilizada, o roteador consegue fazer o encaminhamento normalmente dos pacotes
+    R: Sim, dada a topologia utilizada, o roteador consegue fazer o encaminhamento normalmente dos pacotes pois ele administra as duas sub-redes do projeto. Em outros casos, ele teria que se comunicar com outros roteadores através
+    de protocolos de roteamento para a descoberta de outras sub-redes e melhor caminho para os pacotes.
+
     
 - Onde ocorreu a “inteligência” da rede?
     
-    R: No roteador. Pois ele quem conseguiu administrar as duas sub-redes trabalhando como gateway.
+    R: No roteador R1. Pois ele quem conseguiu administrar as duas sub-redes trabalhando como gateway para fornecer comunicação entre as duas sub-redes. O switch (gatinho) apenas faz o encaminhamento de frames e não entende sobre camada 3 para poder pensar no melhor caminho para um determinado pacote e nem sequer pensar em conceitos de sub-redes.
     
 - O que aconteceria com mais roteadores?
-R: Depende da topologia, mas se diferentes sub-redes forem administradas por um roteador diferente, deve-se adotar a utilização de protocolos de roteamento (plano de controle) para que as sub-redes tenham uma comunicação.
+
+    R: Depende da topologia, mas se diferentes sub-redes forem administradas por um roteador diferente, deve-se adotar a utilização de protocolos de roteamento (plano de controle) para que as sub-redes tenham uma comunicação.
 
 ### Plano de dados x plano de controle
 
@@ -78,6 +81,7 @@ O plano de controle é onde o roteamento age. Ele calcula qual o melhor caminho 
 #### Como funciona a tabela de encaminhamento?
 
 A tabela de encaminhamento relaciona o endereço de uma rede com qual interface ele deve ser encaminhado. Isso ocorre em nível de hardware e por isso não é necessário muito processamento. É resumido em entrada-saída.
+
 
 
 
