@@ -48,11 +48,11 @@ A topologia possui três roteadores interligando três unidades:
 
 ### R2
 
-![img3](noror2.png)
+![img3](imagens/noror2.png)
 
 ### R3
 
-![img4](noror3.png)
+![img4](imagens/noror3.png)
 
 ## Configuração do RIP
 
@@ -90,13 +90,13 @@ Router-RJ#
 
 - ip protocols
 
-![img8](rpr2.png)
+![img8](imagens/rpr2.png)
 
 ### R3
 
 - ip route 
 
-![img9](rrr3.png)
+![img9](imagens/rrr3.png)
 
 - ip protocols
 
@@ -141,7 +141,7 @@ show ip protocols
 
 ![img14](imagens/onr2.png)
 
-![img15](orr2.png)
+![img15](imagens/orr2.png)
 
 ![img16](imagens/opr2.png)
 
@@ -216,7 +216,7 @@ end
 
 IP route de R1 após desligar a rota de BH em SP:
 
-![img22](rjrota.png)
+![img22](imagens/rjrota.png)
 
 IP route de BH após o ocorrido:
 
