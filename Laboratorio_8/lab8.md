@@ -99,4 +99,11 @@ R1(config)# end
 
 > OSFP é IGP, muito bom para administrar redes internas. Já o BGP é EGP e é melhor para troca de informações entre provedores.
 
+
+# Correções
+
+Após fazer o ip route por endereço e não por enlace, R1 conseguiu ter comunicação por loopback com ISP 1. segue o show ip bgp:
+
+![imgseila](imagens/ipbgpfix.png)
+
 # FIM
